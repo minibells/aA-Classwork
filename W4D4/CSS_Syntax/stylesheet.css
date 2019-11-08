@@ -1,0 +1,53 @@
+body {
+    font-family:"Ariel", sans-serif;
+    background-color: floralwhite;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ol.ingredients-list {
+    list-style: square inside;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+    }
+
+body > header > img {
+    width: 100px;
+}
+
+body > header > nav > ul a {
+    text-decoration: none;
+    color: inherit
+}
+
+#TL_review {
+    background-color: honeydew;
+    text-align: center;
+
+}
+
+#TL_review p {
+    font-weight: bold
+    font-family: "Helvetica", sans-serif; 
+}
+
+#TL_review > h4 {
+    color: darkgreen
+}
+
+#reviews > h2 {
+    text-align:center;
+}
+
+body > section:nth-child(3) > ol < li {
+    line-height: 2;
+}
