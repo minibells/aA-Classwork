@@ -1,0 +1,34 @@
+
+#first-div {
+  background-color: #39cccc;
+}
+
+#second-div {
+  background-color: #ff4136;
+  box-sizing:border-box
+}
+
+#third-div {
+  background-color: purple;
+  min-width: 10px;
+  min-height: 10px;
+  padding: 25px;
+}
+
+p {
+  color: purple;
+  background-color: coral;
+  margin: 10px;
+  padding: 15px;
+}
+
+#second-div, #first-div {
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  border: 5px solid black
+}
+
+h1 {
+  color: yellowgreen
+}
