@@ -1,0 +1,13 @@
+<h1>Welcome to Pettit!</h1>
+<br>
+<form action="<%=new_sub_url%>" method="GET">
+  <input type="submit" value="Create New SubPettit">
+  </form>
+
+<% @subs.each do |sub| %>
+  <ul>
+  <li><%= sub.title %></li>
+  <li><%= sub.description %></li>     
+  <li><a href="<%=sub_url(sub)%>">Go there!</a></li>    
+  </ul>
+<% end %>

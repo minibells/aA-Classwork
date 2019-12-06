@@ -1,0 +1,22 @@
+<h1>Make a post!</h1>
+
+
+<form action="<%= sub_posts_url(@sub)%>" method="POST">
+<%= auth_token %>
+<label>Title:
+<input type="text" name="post[title]" value=""></label>
+<br>
+<label>URL:<input type="text" name="post[url]" value=""></label>
+<br>
+<label>Message:<input type="text" name="post[content]" value=""></label>
+<br>
+<label>Post to subs:
+<% @subs.each do |sub| %>
+
+<%=check_box_tag("post[sub_ids][]", sub.id) %>
+<%=sub.title%>
+
+
+<% end %>
+<input type="submit" value="Post!">
+</form>

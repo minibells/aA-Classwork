@@ -1,0 +1,22 @@
+<h1> A post! </h1>
+<ul>
+<li><%= @post.title %></li>
+<li><%= @post.url %></li>
+<li><%= @post.content %></li>
+
+<%if logged_in? && is_op?%>
+<li><a href="<%= edit_sub_post_url(@sub, @post) %>">Edit Post</a></li>
+<% end %>
+</ul>
+<hr>
+<h2>Comments!</h2>
+<%@comments.each do |comment|%>
+<ul>
+<li><%=comment.content%></li>
+<li><a href="<%=sub_post_comment_url(@sub, @post, comment)%>">See more comments</a></li>
+</ul>
+<% end %>
+
+
+<hr>
+<a href="<%=new_sub_post_comment_url(@sub, @post)%>">Leave comment!</a>

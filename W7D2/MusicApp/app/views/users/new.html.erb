@@ -1,0 +1,14 @@
+<h1> SIGN UP LIKE IT'S 1999 </h1>
+
+<form action="<%= users_url %>" method="POST">
+    <%= auth_token %>
+    <label>Email:
+        <input type="text" name="user[email]" value="" />
+    </label>
+    <br>
+    <label>Password:
+        <input type="password" name="user[password]" value="" />
+    </label>
+    <br>
+    <input type="submit" value="Sign Up" />
+</form>

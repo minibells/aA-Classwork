@@ -1,0 +1,27 @@
+<h1><%= @sub.title %></h1>
+  <br>
+  <form action="<%=new_sub_post_url(@sub)%>" method="GET">
+  <input type="submit" value="New Post">
+  </form>
+<ul>
+
+<% if logged_in? && is_moderator? %>
+<form action="<%=edit_sub_url(@sub)%>" method="GET">
+  <input type="submit" value="Edit Sub">
+  </form>
+<% end %>
+
+<% @posts.each do |post| %>
+  <li><%= post.title %></li>
+  <li><%= post.url %></li>
+  <li><%= post.content %></li>
+  <ul>
+  <li><%= post.user.username %></li>
+  </ul>
+  <li><a href="<%=sub_post_url(@sub, post)%>">View Post</a></li>
+  <br>
+<% end %>
+
+
+
+</ul>

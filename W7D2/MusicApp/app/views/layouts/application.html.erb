@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header style="display: flex;">
+   <h1> Welcome to Music App! I wish this was about cats again! </h1>
+ 
+  <% if logged_in? %>
+  Hello! <%=current_user.email%> !!
+  <form action="<%= session_url  %>" method="POST">
+    <input type="hidden" name="_method" value="delete" />
+      <%= auth_token %>
+    <input type="submit" value="Log out">
+    </form>
+    <% else %>
+    <form action="<%= new_session_url  %>" method="GET" display="inline block">
+    <input type="submit" value="Log in">
+    </form>
+    <form action="<%= new_user_url  %>" method="GET" display="inline block">
+    <input type="submit" value="Create an account">
+    </form>
+    <% end %>
+    </header>
+  <body>
+    <%= yield %>
+  </body>
+</html>

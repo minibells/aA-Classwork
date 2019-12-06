@@ -1,0 +1,30 @@
+<h1> CATS R BETTR THAN RATS </h1>
+
+<p>Cats R' Us</p>
+<table style="border: 1px solid;">
+<thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Birth Date</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody >
+<% @cats.each do |cat| %>
+ <tr>
+ <td><%=cat.name%></td>
+ <td><%=cat.description%></td>
+ <td><%=cat.sex%></td>
+ <td><%=cat.age%></td>
+ <td><%=cat.birth_date%></td>
+ <td><%=cat.color%></td>
+ <td><a href="<%=cat_url(cat)%>">See my page!</a></td>
+ </tr>
+<% end %>
+
+</tbody>
+</table>
+

@@ -1,0 +1,35 @@
+/* PHASE 3: Layout */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-height: 200px;
+    width: 900px;
+    background-color: aquamarine;
+    border: 1px coral solid;
+    border-top: 0;
+}
+
+.content-sidebar {
+    padding: 20px;
+    padding-right: 19px;
+    border-right: 1px solid #ccc;
+    min-height: 200px;
+    width: 200px;
+    background-color: azure;
+}
+
+.content-main {
+    padding: 20px;
+    min-height: 200px;
+    width: 620px;
+    background-color: cadetblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    width: 900px;
+    min-height: 40px;
+}

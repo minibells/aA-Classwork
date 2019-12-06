@@ -1,0 +1,19 @@
+<h1> TOXOPLASMOSIS BROUGHT ME HERE!!!! </h1>
+
+<form action="<%= users_url %>" method="post">
+  <input type="hidden" name="_method" value="post">
+
+  <label for="username">Username</label>
+  <input
+    type="text"
+    name="user[username]"
+    id="username">
+    <br>
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    name="user[password]">
+
+  <input type="submit" value="Sign up!">
+</form>

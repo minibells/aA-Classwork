@@ -1,0 +1,63 @@
+// Use the gear_dropdown.png screenshot as a style guide
+.gear-dropdown-btn {
+    position: relative;
+}
+
+.gear-dropdown {
+    position: absolute;
+    justify-content: flex-end;
+    top: 4.5em;
+    right: 0;
+    text-align: left;
+    padding: 5px;
+	width: 200px;
+	background-color: #fff;
+	border: 1px solid $light-gray;
+	border-radius: 3px;
+	color: $dark-gray;
+	font-family: $sans-serif;
+	box-shadow: -2px 2px 4px 2px rgba(0,0,0,0.09);
+    font-weight: inherit;
+    z-index: 1;
+}
+
+
+ .gear-dropdown ul > li {
+  margin: 5px 0;
+ 
+}
+
+.editions > li {
+    padding: 5px;
+  
+}
+
+.editions > li:hover {
+    background-color: $light-gray;
+}
+
+.editions > li a:hover {
+    text-decoration: none;
+}
+
+.editions > li:last-child {
+    padding-bottom: 7px;
+    border-bottom: 1px solid $light-gray;
+}
+
+.dropdown-subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: .8em;
+    margin-top: 15px;
+
+}
+
+.help {
+    color: $light-blue;
+}
+
+.help > li {
+    padding: 5px;
+}

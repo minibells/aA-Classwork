@@ -1,0 +1,13 @@
+<h1>Edit subs!</h1>
+
+
+<form action="<%= subs_url(@sub)%>" method="POST">
+<%= auth_token %>
+<input type="hidden" name="_method" value="PATCH">
+<label>Title:
+<input type="text" name="sub[title]" value="<%=@sub.title%>"></label>
+<br>
+<label>Description:<input type="text" name="sub[description]" value="<%=@sub.description%>"></label>
+<br>
+<input type="submit" value="Save Changes!">
+</form>

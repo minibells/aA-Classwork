@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    padding: 2em;
+    margin: 1em;
+}
+
+.main > section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.opinion-mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+

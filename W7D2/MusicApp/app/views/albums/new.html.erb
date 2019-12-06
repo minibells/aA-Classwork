@@ -1,0 +1,20 @@
+<h1> Submit a rad album!! </h1>
+
+<form action="<%albums_url%>" method="POST">
+    <%= auth_token %>
+    <label>Band Name:
+        <select>
+            <%Band.all.each do |band|%>
+            <option value="<%=band.name%>"><%=band.name%></option>
+            <% end %>
+        </select>
+        </label>
+        <br>
+    <label>Title:
+        <input type="text" name="album[title]">
+    </label>
+    <br>
+    
+        <input type="submit" value="Submit Album" />
+
+</form>

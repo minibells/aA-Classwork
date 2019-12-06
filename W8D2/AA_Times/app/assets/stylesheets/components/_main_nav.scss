@@ -1,0 +1,45 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light-gray;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+    align-items: center;
+    font-family: arial, helvetica, sans-serif;; 
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.left-nav > ul > li {
+    font-weight: bold;
+    margin: 15px;
+    padding: 8px;
+}
+
+.right-nav > ul > li {
+    margin: 3px;
+}
+
+.right-nav > ul > li:last-of-type {
+    font-size: inherit;
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    background-color: #f7f7f5;
+
+}
+
+.left-nav span {
+    padding: 8px;
+    font-size: inherit;
+}
+
+
+.right-nav i {
+    font-size: 2em;
+    padding: 8px;
+}
